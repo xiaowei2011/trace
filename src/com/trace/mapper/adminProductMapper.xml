@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.trace.dao.AdminProductMapper" >
+	
+	<select id="get" resultType="AdminProduct">
+		select * from admin_product
+		<where>
+			<if test="adminId != null">
+				adminId= #{adminId}
+			</if>
+			<if test="productId != null">
+				and productId= #{productId}
+			</if>
+		</where> 
+	</select>
+	
+	<insert id="insert" parameterType="AdminProduct" 
+		useGeneratedKeys="true" keyProperty="id">
+		insert into admin_product(adminId,productId)
+		values(#{adminId},#{productId})
+	</insert>
+	
+	<insert id="insertList" parameterType="List" useGeneratedKeys="true" keyProperty="id">
+		insert into admin_product(adminId,productId)
+		values
+		<foreach collection="list" item="item" separator=",">
+			(#{item.adminId},#{item.productId})
+		</foreach>
+	</insert>
+</mapper>

@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+body, p, td, th, input, textarea, select, button, div {
+    color: #444444;
+    font: 12px "Microsoft YaHei","Lucida Grande",STHeiti,Verdana,Arial,Times,serif;
+}
+body, ul, dl, dd, p, h1, h2, h3, h4, h5, h6, form, div, fieldset, textarea, input, a, img {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("http://suyuan.iacms.cn/statics/extres/member/images/main-bg.gif") repeat;
+}
+.user {
+    margin: 0 auto;
+    min-height: 852px;
+}
+.header .h_main {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+.header .h_main {
+    height: 65px;
+}
+dl, ol, dt, dd, ul, li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.header .menus {
+    display: inline;
+    float: left;
+    height: 43px;
+    padding-top: 9px;
+    _padding-top: 12px;
+    position: relative;
+    z-index: 10000;
+}
+.header .menus li {
+    display: inline;
+    float: left;
+}
+a:link {
+    color: #444444;
+    text-decoration: none;
+}
+a:visited {
+    color: #444444;
+    text-decoration: none;
+}
+.header .m_nav_a a {
+    color: #ffffff;
+    position: relative;
+    margin: 0 12px;
+    padding: 12px 6px 10px;
+}
+.header .menus li a, .m_nav_a {
+    font-size: 16px;
+}
+.header .menus li .sliding_menu {
+    float: left;
+    display: inline;
+    color: #ffffff;
+    font-weight: bold;
+}
+.header .member_login {
+    float: right;
+    margin-top: 14px;
+    display: inline;
+    height: 50px;
+}
+.header .member_login li {
+    float: left;
+    display: inline;
+    margin-left: 8px;
+    position: relative;
+    height: 50px;
+}
+.part {
+    margin: 2rem;
+    padding: 8px;
+}
+img {
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: text-bottom;
+}
+.pinzhong, .shangshi {
+    font-size: 1rem;
+    margin: 2px;
+    margin: 0;
+    padding: .2rem 0;
+}
+.text-white {
+    color: white !important;
+}
+.user_center_body {
+    background: white;
+    width: 960px;
+    min-height: 100px;
+    height: auto !important;
+    _height: 100px;
+    margin-top: 5px;
+    display: inline;
+    float: left;
+    min-height: 852px;
+}
+td, th {
+    padding: 0;
+}
+th {
+    text-align: left;
+}
+em, cite, th {
+    font-style: normal;
+    font-weight: normal;
+}
+.user_copyright {
+    width: 962px;
+    font-size: 12px;
+    height: 60px;
+    line-height: 22px;
+    margin: 15px 0 0;
+    text-align: center;
+    display: inline;
+    float: left;
+}
+.user_center_body table tbody th, .user_center_body table tbody td {
+    vertical-align: middle;
+}

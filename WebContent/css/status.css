@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+html, body, div, dl, dt, dd, ul, p, th, td, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial;
+    color: #333;
+    font-size: 12px;
+    background: #f3f3f3;
+    line-height: 1.5;
+    _width: 98%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+td, th, div {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.wrap {
+    padding: 20px 20px 70px;
+}
+#error_tips {
+    border: 1px solid #d4d4d4;
+    background: #fff;
+    -webkit-box-shadow: #ccc 0 1px 5px;
+    -moz-box-shadow: #ccc 0 1px 5px;
+    -o-box-shadow: #ccc 0 1px 5px;
+    box-shadow: #ccc 0 1px 5px;
+    filter: progid: DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#ccc');
+    max-width: 500px;
+    margin: 50px auto;
+}
+#error_tips h2 {
+    font: bold 14px/40px Arial;
+    height: 40px;
+    padding: 0 20px;
+    color: #666;
+}
+.user_group dt, #error_tips h2, .task_item_list .hd, .medal_term .ct h6, .app_info .hd, .app_present .hd, .app_updata .hd, .sql_list dt {
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#f4f4f4));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #f4f4f4);
+    background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+    background-image: linear-gradient(#ffffff, #ffffff 25%, #f4f4f4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4', GradientType=0);
+    border-bottom: 1px solid #dfdfdf;
+}
+.error_cont {
+    padding: 20px 20px 30px 80px;
+    background: url(http://suyuan.iacms.cn/statics/images/admin/tips/light.png) 20px 20px no-repeat;
+    line-height: 1.8;
+}
+li {
+    list-style: none;
+}
+.error_return {
+    padding: 10px 0 0 0;
+}
+.btn {
+    color: #333;
+    background: #e6e6e6 url(http://suyuan.iacms.cn/statics/images/admin/content/btn.png);
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    padding: 4px 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: normal;
+    text-decoration: none;
+    overflow: visible;
+    vertical-align: middle;
+    text-align: center;
+    zoom: 1;
+    white-space: nowrap;
+    font-family: inherit;
+    _position: relative;
+    margin: 0;
+}

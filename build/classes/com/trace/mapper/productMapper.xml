@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.trace.dao.ProductMapper" >
+	<select id="get" parameterType="Integer" resultType="Product">
+		select * from product where id= #{id}
+	</select>
+	
+	<select id="getByAdmin" resultType="Product">
+		select id,name,description,origin,plantDate,pickDate,img
+		from product,admin_product
+		where adminId=#{adminId} and productId=id
+	</select>
+	
+	<insert id="insert" parameterType="Product" useGeneratedKeys="true" keyProperty="id">
+		insert into product(name,description,origin,plantDate,pickDate,img)
+		values(#{name},#{description},#{origin},#{plantDate},#{pickDate},#{img})
+	</insert>
+	
+	<insert id="insertList" parameterType="List" useGeneratedKeys="true" keyProperty="id">
+		insert into product(name,description,origin,plantDate,pickDate,img)
+		values
+		<foreach collection="list" item="item" separator=",">
+			(#{item.name},#{item.description},#{item.origin},#{item.plantDate},#{item.pickDate},#{img})
+		</foreach>
+	</insert>
+	
+	<update id="update">
+		update product set name=#{name},description=#{description},origin=#{origin},
+		plantDate=#{plantDate},pickDate=#{pickDate},img=#{img}
+		where id=#{id}
+	</update>
+	
+	<delete id="delete">
+		delete from product where id=#{id}
+	</delete>
+</mapper>

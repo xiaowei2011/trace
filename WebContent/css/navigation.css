@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+body, p, td, th, input, textarea, select, button, div {
+    color: #444444;
+    font: 12px "Microsoft YaHei","Lucida Grande",STHeiti,Verdana,Arial,Times,serif;
+}
+body, ul, dl, dd, p, h1, h2, h3, h4, h5, h6, form, div, fieldset, textarea, input, a, img {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: url("../images/h_bg.png") repeat-x 0 -236px;
+    height: 104px;
+    width: 100%;
+}
+.header .h_main {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+.header .h_main {
+    height: 65px;
+}
+dl, ol, dt, dd, ul, li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+a:link {
+    color: #444444;
+    text-decoration: none;
+}
+a:visited {
+    color: #444444;
+    text-decoration: none;
+}
+.header .menus {
+    display: inline;
+    float: left;
+    height: 43px;
+    padding-top: 9px;
+    _padding-top: 12px;
+    position: relative;
+    z-index: 10000;
+}
+.header .menus li a, .m_nav_a {
+    font-size: 16px;
+}
+.header .menus li {
+    display: inline;
+    float: left;
+}
+.header .m_nav_a a {
+    color: #ffffff;
+    position: relative;
+    margin: 0 12px;
+    padding: 12px 6px 10px;
+}
+.header .menus li .sliding_menu {
+    float: left;
+    display: inline;
+    color: #ffffff;
+    font-weight: bold;
+}
+.header .menus li a:hover {
+    color: #6DB823;
+    text-decoration: none;
+}
+.user_copyright {
+    width: 962px;
+    font-size: 12px;
+    height: 60px;
+    line-height: 22px;
+    margin: 15px 0 0;
+    text-align: center;
+    display: inline;
+    float: left;
+}
+.header .member_login {
+    float: right;
+    margin-top: 14px;
+    display: inline;
+    height: 50px;
+}
+.header .member_login li {
+    float: left;
+    display: inline;
+    margin-left: 8px;
+    position: relative;
+    height: 50px;
+}
+.text-white {
+    color: white !important;
+}

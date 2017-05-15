@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.trace.dao.UserMapper" >
+	
+	<select id="get" resultType="User">
+		select * from user
+		<if test="id != null">
+			where id=#{id}
+		</if>
+	
+	</select>
+	
+	<select id="getByOpenid" resultType="User">
+		select * from user where openid = #{openid}
+	</select>
+	
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		insert into user(openid,nickname,sex)
+		values(#{openid},#{nickname},#{sex})
+	</insert>
+	
+	<delete id="delete">
+		delete from user where id = #{id}
+	</delete>
+	
+	<delete id="deleteByOpenId">
+		delete from user where openid = #{openid}
+	</delete>
+	
+</mapper>

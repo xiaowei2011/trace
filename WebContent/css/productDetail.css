@@ -1,0 +1,236 @@
+@CHARSET "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font: 18px/1.5 Arial, Helvetica, "Microsoft YaHei", "\5B8B\4F53";
+    color: #8e8e8e;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, 
+form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font-size: 12px;
+}
+body {
+    line-height: 1.6;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+    display: block;
+}
+#bar {
+    height: 30px;
+    line-height: 26px;
+    background: #227744;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+}
+#bar {
+    font-size: 14px;
+}
+#cards {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.ac {
+    text-align: center;
+}
+.first-view {
+    position: relative;
+}
+.first-view .produce_photo {
+    display: inline-block;
+    overflow: hidden;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.img-responsive {
+    display: inline-block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+}
+.first-view .logo-bg {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 58%,#FFFFFF 80%, rgba(255,255,255,1)) 100%;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 58%, #FFFFFF 80%,rgba(255,255,255,1)) 100%;
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 58%, #FFFFFF 80%,rgba(255,255,255,1)) 100%;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.product-title {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    position: relative;
+}
+.product-title .product-name {
+    font-size: 24px;
+    color: #222;
+}
+.product-title .product-name {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.company {
+    overflow: hidden;
+    line-height: 40px;
+}
+.fr {
+    float: right;
+}
+.company .btn-default {
+    display: inline-block;
+    width: 98px;
+    height: 38px;
+    border: 1px solid #227744;
+    color: #274;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: top;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.product-title .btn-rate, .company .btn-default {
+    font-size: 12px;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+}
+.produce-info, .summary {
+    position: relative;
+}
+.statistics {
+    border-top: 1px solid #ddd;
+}
+ol, ul {
+    list-style: none;
+}
+.produce-info .statistics ul {
+    padding: 10px 0px;
+    overflow: hidden;
+}
+.produce-info .statistics ul li {
+    float: left;
+    width: 33.11222%;
+    border-left: 1px solid #ddd;
+    text-align: center;
+    color: #888;
+    overflow: hidden;
+    min-height: 50px;
+}
+.produce-info .statistics ul li:first-child {
+    border-left: none;
+}
+.produce-info .statistics .value {
+    color: #274;
+}
+.pd20 {
+    padding: 0px 20px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.company ul li {
+    padding-left: 90px;
+    color: #555;
+    overflow: hidden;
+    line-height: 24px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.company ul li {
+    padding-left: 60px;
+}
+.company .label-like {
+    width: 70px;
+    margin-left: -90px;
+    float: left;
+    color: #8e8e8e;
+}
+em, cite, i, var, s {
+    font-style: normal;
+}
+.company .company-logo {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(http://suyuan.iacms.cn/statics/suyuan/css/img/2_03.png) 0 0 no-repeat;
+    line-height: 42px;
+    vertical-align: middle;
+}
+.company .label-like {
+    width: 50px;
+    margin-left: -60px;
+}
+.company .btn-default {
+    display: inline-block;
+    width: 98px;
+    height: 38px;
+    border: 1px solid #227744;
+    color: #274;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: top;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.product-title .btn-rate, .company .btn-default {
+    font-size: 12px;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+}
+.company .c-name {
+    color: #222;
+}
+.company .flag {
+    color: #888;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.mod {
+    padding: 0px 20px;
+}
+.f24 {
+    font-size: 16px;
+}
+.mod .sub-title {
+    color: #274;
+    padding-top: 30px;
+}
+.brief .text {
+    color: #222;
+    line-height: 32px;
+}
+.mt15 {
+    margin-top: 15px;
+}
